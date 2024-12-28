@@ -1,0 +1,9 @@
+<div mat-dialog-title>¿Se encuentra seguro de eliminar el registro?</div>
+<div mat-dialog-content>
+  <p>Este proceso no es reversible, está a punto de eliminar a {{data.superhero}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <span class="spacer"></span>
+  <button mat-button color="primary" (click)="onConfirm()" cdkFocusInitial>Confirmar</button>
+</div>
